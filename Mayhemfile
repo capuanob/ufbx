@@ -1,0 +1,7 @@
+image: ghcr.io/capuanob/ufbx-fuzz:latest
+project: ufbx
+target: ufbx-fuzz
+
+cmds:
+  - cmd: /ufbx-fuzz -close_fd_mask=2
+    libfuzzer: true
